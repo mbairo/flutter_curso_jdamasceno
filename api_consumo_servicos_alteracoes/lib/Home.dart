@@ -1,5 +1,4 @@
 import 'dart:ffi';
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -43,8 +42,7 @@ class _HomeState extends State<Home> {
 
     setState(() {
       _listaDeResultados.add({
-        "cep":
-            "Cep: ${objRetorno["cep"]}", // outra forma de colocar o objRetorno
+        "cep":"Cep: ${objRetorno["cep"]}", // outra forma de colocar o objRetorno
         "logradouro": "Logradouro: " + objRetorno["logradouro"],
         "bairro": "Bairro: " + objRetorno["bairro"],
         "localidade": "Localidade: " + objRetorno["localidade"],
